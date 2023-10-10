@@ -4,12 +4,12 @@
     "name": "Logic App Standard",
     "description": "A template for a Logic App Standard dev container.",
     "documentationUrl": "",
-    "licenseUrl": "",
+    "licenseUrl": "https://github.com/mcollier/logic-app-dev-container-template/blob/main/LICENSE",
     "publisher": "Community",
     "options": {
         "imageVariant": {
             "type": "string",
-            "description": "Debian version (use bullseye on local arm64/Apple Silicon",
+            "description": "Debian version (use bullseye on local arm64/Apple Silicon)",
             "proposals": [
                 "bullseye",
                 "buster"
