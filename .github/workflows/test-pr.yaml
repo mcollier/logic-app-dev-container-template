@@ -12,7 +12,7 @@ jobs:
         id: filter
         with:
           filters: |
-            python-mssql: ./**/python-mssql/**
+            logic-app-standard: ./**/logic-app-standard/**
 
   test:
     needs: [detect-changes]
