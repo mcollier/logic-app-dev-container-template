@@ -1,0 +1,19 @@
+// More info: https://containers.dev/implementors/json_reference/
+{
+    "name": "Template Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install -g @devcontainers/cli"
+}
