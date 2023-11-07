@@ -1,11 +1,11 @@
 #! /bin/bash
 set -e
 
-WORKFLOW_TEMPLATE_SETTINGS="./source/workflow-designtime/local.template.settings.json"
-WORKFLOW_LOCAL_SETTINGS="./source/workflow-designtime/local.settings.json"
+WORKFLOW_TEMPLATE_SETTINGS="./src/workflow-designtime/local.template.settings.json"
+WORKFLOW_LOCAL_SETTINGS="./src/workflow-designtime/local.settings.json"
 
-HOST_TEMPLATE_SETTINGS="./source/local.template.settings.json"
-HOST_LOCAL_SETTINGS="./source/local.settings.json"
+HOST_TEMPLATE_SETTINGS="./src/local.template.settings.json"
+HOST_LOCAL_SETTINGS="./src/local.settings.json"
 
 # Check if the file exists
 if [ -f "$WORKFLOW_LOCAL_SETTINGS" ]; then
