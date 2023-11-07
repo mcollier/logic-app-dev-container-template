@@ -16,15 +16,12 @@
         },
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {},
-        "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
     },
     // Configure tool-specific properties
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-azuretools.vscode-azurelogicapps",
-                "ms-azure-devops.azure-pipelines",
                 "ms-azuretools.vscode-bicep",
                 "ms-dotnettools.csdevkit",
                 "ms-dotnettools.vscode-dotnet-runtime",
@@ -40,7 +37,7 @@
     // Use 'postCreateCommand' to run commands after the container is created.
     // The local.settings.json file is needed for the workflow designer (as part of the Azure Functions runtime). The local.settings.json file
     // is normally ignored via the .gitignore file created in a new Logic App Standard (or Azure Functions) project.
-    "postCreateCommand": "echo '${templateOption:imageVariant}' > /tmp/logic-app-standard.txt && cp ./src/workflow-designtime/starter.settings.json ./src/workflow-designtime/local.settings.json && sudo chown vscode .azure-functions-core-tools",
+    "postCreateCommand": "echo '${templateOption:imageVariant}' > /tmp/logic-app-standard.txt && sudo .devcontainer/scripts/setup-local-settings.sh",
     // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode"
 }
