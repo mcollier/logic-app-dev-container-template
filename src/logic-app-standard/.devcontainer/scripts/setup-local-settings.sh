@@ -26,6 +26,3 @@ else
     cp $HOST_TEMPLATE_SETTINGS $HOST_LOCAL_SETTINGS
     echo "Copied local template settings."
 fi
-
-
-chown vscode .azure-functions-core-tools

@@ -1,6 +1,6 @@
 {
     "id": "logic-app-standard",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Logic App Standard",
     "description": "A template for a Logic App Standard dev container.",
     "documentationUrl": "",
