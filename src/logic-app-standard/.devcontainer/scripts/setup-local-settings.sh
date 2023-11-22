@@ -28,4 +28,4 @@ else
 fi
 
 
-chown vscode .azure-functions-core-tools
+# chown vscode .azure-functions-core-tools
