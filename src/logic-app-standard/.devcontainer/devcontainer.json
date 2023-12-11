@@ -15,25 +15,18 @@
             "version": "latest"
         },
         "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
     },
     // Configure tool-specific properties
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-azuretools.vscode-azurelogicapps",
-                "ms-azuretools.vscode-bicep",
-                "ms-dotnettools.csdevkit",
-                "ms-dotnettools.vscode-dotnet-runtime",
-                "ms-vscode.vscode-node-azure-pack",
-                "davidanson.vscode-markdownlint"
+                "ms-azuretools.vscode-bicep"
             ],
             "settings": {}
         }
     },
-    "mounts": [
-        "source=${localWorkspaceFolderBasename}-azure-functions-core-tools,target=${containerWorkspaceFolder}/.azure-functions-core-tools,type=volume"
-    ],
     // Use 'postCreateCommand' to run commands after the container is created.
     // The local.settings.json file is needed for the workflow designer (as part of the Azure Functions runtime). The local.settings.json file
     // is normally ignored via the .gitignore file created in a new Logic App Standard (or Azure Functions) project.
