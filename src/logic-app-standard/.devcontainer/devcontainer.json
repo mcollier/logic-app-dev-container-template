@@ -24,7 +24,10 @@
                 "ms-azuretools.vscode-azurelogicapps",
                 "ms-azuretools.vscode-bicep"
             ],
-            "settings": {}
+            "settings": {
+                "azureLogicAppsStandard.azuriteLocationSetting": "/home/vscode/.azurelogicapps/.azurite",
+                "azureLogicAppsStandard.autoRuntimeDependenciesPath": "/home/vscode/.azurelogicapps/dependencies"
+            }
         }
     },
     // Use 'postCreateCommand' to run commands after the container is created.
